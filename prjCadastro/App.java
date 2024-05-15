@@ -10,6 +10,7 @@ public class App {
 		double peso;
 		String email;
 		
+		System.out.println("1");
 		System.out.println("Entre com o nome:");
 		nome = in.nextLine();
 		System.out.println("Entre com o email:");
@@ -18,11 +19,16 @@ public class App {
 		idade = in.nextInt();
 		System.out.println("Entre com o peso:");
 		peso = in.nextDouble();
-		
 		p.cadastrarPessoa1(nome, email, idade, peso);
 		p.exibirPessoa1();
 		
+		
+		System.out.println("2");
 		p.cadastrarPessoa2();
+		String exibir = p.exibirPessoa2();
+		System.out.println(exibir);
+		
+		in.close();
 	}
 
 }
