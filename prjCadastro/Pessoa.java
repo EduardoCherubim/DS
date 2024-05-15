@@ -31,5 +31,11 @@ public class Pessoa {
 		System.out.println("idade: "+idade);
 		System.out.println("peso: "+peso);
 	}
+	
+	public String exibirPessoa2() {
+		String exibir = nome+""+email+""+idade+""+peso;
+		
+		return exibir;
+	}
 
 }
